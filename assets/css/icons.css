@@ -1,0 +1,29 @@
+.icon-hamburguer::before,
+.icon-logo::before {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+.icon-hamburguer::before {
+  content: url(../images/icons/hamburguer.png);
+}
+.icon-logo::before {
+  content: url(../images/logo-mobile.png);
+}
+.icon-clock {
+  content: url(../images/icons/clock.png);
+  width: 15px;
+}
+.icon-trajectory {
+  content: url(../images/icons/git.png);
+  width: 12px;
+  height: auto;
+}
+.icon-up {
+  display: none;
+  content: url(../images/icons/up.png);
+  width: 40px;
+  position: fixed;
+  bottom: 37px;
+  right: 10px;
+}
