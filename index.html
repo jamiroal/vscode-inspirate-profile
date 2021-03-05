@@ -10,10 +10,10 @@
   <body>
     <header>
       <nav class="header-nav">
-        <a class="mobile-menu">
+        <a href="javascript:void(0);" class="mobile-menu">
           <i class="icon-hamburguer"></i>
         </a>
-        <a href="/">
+        <a href="javascript:void(0);" class="logo-mobile">
           <i class="icon-logo"></i>
         </a>
         <div class="tabs-container">
@@ -24,13 +24,13 @@
           <span class="tabs-counter">2</span>
         </div>
       </nav>
-      
+
       <div class="tabs-base"></div>
     </header>
 
-    <div style="height: 200vh">
-      <div style="height: 100vh; background-color: green"></div>
-      <div style="height: 100vh; background-color: blue"></div>
+    <div class="content">
+      <div></div>
+      <div></div>
     </div>
 
     <footer>
@@ -49,9 +49,16 @@
       </div>
     </footer>
 
-    <div>
-      <i id="go-up" class="icon-up"></i>
+    <div id="mobile-menu-container">
+      <div class="mobile-menu-tabs">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+      </div>
+      <div class="mobile-menu-tabs-content"></div>
     </div>
+
+    <i id="go-up" class="icon-up"></i>
 
     <script src="assets/js/app.js"></script>
   </body>
