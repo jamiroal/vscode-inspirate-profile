@@ -84,7 +84,7 @@ footer {
   background-color: #c4c4c4;
   display: flex;
   justify-content: flex-start;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 footer .article-type {
