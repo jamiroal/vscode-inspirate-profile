@@ -27,3 +27,22 @@
   bottom: 37px;
   right: 10px;
 }
+.icon-tab-menu {
+  width: 30px;
+  height: 30px;
+}
+.icon-folder {
+  content: url(../images/icons/folder.png);
+}
+.icon-git {
+  content: url(../images/icons/git.png);
+}
+.icon-profile {
+  content: url(../images/icons/profile.png);
+}
+.icon-search {
+  content: url(../images/icons/search.png);
+}
+.icon-settings {
+  content: url(../images/icons/settings.png);
+}
