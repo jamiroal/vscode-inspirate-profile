@@ -22,21 +22,29 @@
         <a href="javascript:void(0);" class="logo-mobile">
           <i class="icon-logo"></i>
         </a>
-        <div class="tabs-container">
-          <div class="tab">
-            <p>index.html</p>
+        <ul class="tabs">
+          <li class="tab col s3">
+            <a href="#test">Inbox</a>
             <span>X</span>
-          </div>
-          <span class="tabs-counter">2</span>
-        </div>
+          </li>
+          <li class="tab col s3">
+            <a href="#test2">Inbox</a>
+            <span>X</span>
+          </li>
+          <li class="tab col s3">
+            <a href="#test3">Inbox</a>
+            <span>X</span>
+          </li>
+        </ul>
       </nav>
 
       <div class="tabs-base"></div>
     </header>
 
     <div class="content">
-      <div></div>
-      <div></div>
+      <div id="test"></div>
+      <div id="test2"></div>
+      <div id="test3"></div>
     </div>
 
     <footer>
@@ -63,6 +71,16 @@
       document.addEventListener('DOMContentLoaded', function () {
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems, {});
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems, {});
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.tabs');
+        var instance = M.Tabs.init(elems, {});
       });
     </script>
 

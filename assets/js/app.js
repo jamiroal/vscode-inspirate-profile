@@ -34,8 +34,8 @@ const fillMenuTabs = (tab) => {
 
 const fillMenuTabsContentFirstLevel = (content) => {
   return `<li>
-            <h1>${content.name}</h1>
-            <ul>
+            <h1 class="collapsible-header">${content.name}</h1>
+            <ul class="collapsible-body collapsible">
             ${content.data.map(fillMenuTabsContentSecondLevel).join('')}
             </ul>
           </li>`;
@@ -43,8 +43,8 @@ const fillMenuTabsContentFirstLevel = (content) => {
 
 const fillMenuTabsContentSecondLevel = (content) => {
   return `<li>
-            <h2>${content.name}</h2>
-            <ul>
+            <h2 class="collapsible-header">${content.name}</h2>
+            <ul class="collapsible-body">
               ${content.article.map(fillMenuTabsContentThirdLevel).join('')}
             </ul>
           </li>`;
@@ -60,7 +60,9 @@ const loadMenuMobile = () => {
     `<div class="mobile-menu-tabs">${menuTabs.map(fillMenuTabs).join('')}</div>
     <div class="mobile-menu-tabs-content">
       <p>KNOWLEDGE</p>
-      <ul>${menuTabsContent.map(fillMenuTabsContentFirstLevel).join('')}</ul>
+      <ul class="collapsible">${menuTabsContent
+        .map(fillMenuTabsContentFirstLevel)
+        .join('')}</ul>
     </div>`
   );
 };

@@ -38,23 +38,30 @@ header {
 .tab {
   background-color: #aeaeae;
   border-radius: 7px 7px 0px 0px;
-  width: 200px;
+  min-width: 200px;
   height: 40px;
-  margin: 0 10px;
-  position: absolute;
+  margin: 0 10px !important;
+  /* TODO change important*/
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.tab p {
-  width: 85%;
-  margin: 0 0 0 10px;
-  font-size: 18px;
-  line-height: 30px;
+.tab a {
+  color: #000 !important;
+  /* TODO change important*/
+}
+.tab a.active {
 }
 .tab span {
   font-size: 18px;
   font-weight: 500;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.tabs .indicator {
+  display: none;
 }
 .tabs-counter {
   width: 24px;
@@ -77,15 +84,19 @@ header {
 }
 
 .content {
-  height: 200vh;
+  height: 150vh;
 }
 .content div:first-child {
-  height: 100vh;
+  height: 100%;
   background-color: lightgreen;
 }
-.content div:last-child {
-  height: 100vh;
+.content div:nth-child(1) {
+  height: 100%;
   background-color: lightblue;
+}
+.content div:nth-child(2) {
+  height: 100%;
+  background-color: lightgoldenrodyellow;
 }
 
 footer {
