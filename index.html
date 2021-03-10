@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
     <title>Document</title>
+    <script src="./assets/js/materialize/materialize.min.js"></script>
   </head>
   <body>
     <header>
       <nav class="header-nav">
-        <a href="javascript:void(0);" class="mobile-menu">
+        <a
+          href="#"
+          data-target="mobile-menu-container"
+          class="sidenav-trigger mobile-menu"
+        >
           <i class="icon-hamburguer"></i>
         </a>
+
         <a href="javascript:void(0);" class="logo-mobile">
           <i class="icon-logo"></i>
         </a>
@@ -49,9 +55,16 @@
       </div>
     </footer>
 
-    <div id="mobile-menu-container"></div>
+    <div id="mobile-menu-container" class="sidenav"></div>
 
     <i id="go-up" class="icon-up"></i>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {});
+      });
+    </script>
 
     <script type="module" src="./assets/js/app.js"></script>
     <script type="module" src="./assets/translate/menu-items.js"></script>

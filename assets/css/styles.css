@@ -1,7 +1,7 @@
+@import url('materialize.css');
 @import url('normalize.css');
 @import url('reset.css');
 @import url('icons.css');
-@import url('mobile-menu.css');
 
 html {
   scroll-behavior: smooth;

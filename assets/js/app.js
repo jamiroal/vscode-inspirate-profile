@@ -17,28 +17,6 @@ upButton.addEventListener('click', () => {
   document.documentElement.scrollTop = 0;
 });
 
-//Mobile menu functionalities
-
-const mobileMenuClick = document.querySelector('.mobile-menu'),
-  mobileMenuIconClick = mobileMenuClick.firstElementChild,
-  mobileMenu = document.querySelector('#mobile-menu-container');
-
-mobileMenuClick.addEventListener('click', () => {
-  mobileMenu.classList.add('active');
-});
-
-document.addEventListener('click', function (evt) {
-  let targetElement = evt.target;
-
-  if (
-    targetElement !== mobileMenuClick &&
-    targetElement !== mobileMenuIconClick &&
-    targetElement !== mobileMenu
-  ) {
-    mobileMenu.classList.remove('active');
-  }
-});
-
 // Initializing menu
 
 import { menuItems } from '../translate/menu-items.js';
